@@ -13,6 +13,7 @@
         <module>spring-cloud-secure-server</module>
         <module>spring-clout-secure-authorization-server</module>
         <module>spring-cloud-security-cli</module>
+        <module>zipkin-server</module>
     </modules>
 
     <properties>

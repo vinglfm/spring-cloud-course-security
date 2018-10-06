@@ -2,6 +2,22 @@ server:
   port: 9001
   contextPath: /services
 
+spring:
+  application:
+    name: TollApplication
+  zipkin:
+    baseUrl: http://localhost:8085
+  sleuth:
+    sampler:
+      percentage: 1.0
+
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          sleuth: DEBUG
+
 #for resource server token lookup
 security:
   oauth2:

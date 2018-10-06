@@ -2,6 +2,22 @@ server:
   port: 9000
   contextPath: /services
 
+spring:
+  application:
+    name: AuthorizationApplication
+  zipkin:
+    baseUrl: http://localhost:8085
+  sleuth:
+    sampler:
+      percentage: 1.0
+
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          sleuth: DEBUG
+
 security:
 #  user:
 #    name: richard

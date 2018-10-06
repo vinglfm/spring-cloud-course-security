@@ -1,4 +1,4 @@
-package  com.apryshchepa.spring.cloud.security.client.cli;
+package com.apryshchepa.spring.cloud.security.client.cli;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
