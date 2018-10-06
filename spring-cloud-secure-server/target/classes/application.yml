@@ -1,0 +1,11 @@
+server:
+  port: 9001
+  contextPath: /services
+
+#for resource server token lookup
+security:
+  oauth2:
+    resource:
+#      userInfoUri: https://api.github.com/user
+      userInfoUri: http://localhost:9000/services/user
+#  security.oauth2.resource.userInfoUri: http://localhost:9000/services/user
