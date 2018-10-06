@@ -1,0 +1,15 @@
+server:
+  port: 9000
+  contextPath: /services
+
+security:
+#  user:
+#    name: richard
+#    password: password
+#    role: USER
+  oauth2:
+    client:
+      clientId: pluralsight
+      clientSecret: pluralsightsecret
+      authorized-grant-types: authorization_code,refresh_token,password,client_credentials
+      scope: toll_read,toll_report
